@@ -5,60 +5,112 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>My Portfolio</title>
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      background: #f9f9f9;
-      color: #333;
+    :root {
+      --primary: #a5c8e1;
+      --secondary: #f4dada;
+      --accent: #f5e1fd;
+      --text-dark: #333;
+      --text-light: #555;
+      --white: #fff;
     }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      background: var(--primary);
+      color: var(--text-dark);
+    }
+
     header {
-      background: #4f46e5;
-      color: white;
-      padding: 1rem;
+      background: var(--secondary);
+      color: var(--text-dark);
+      padding: 2rem;
       text-align: center;
     }
+
     nav {
       display: flex;
       justify-content: center;
-      gap: 2rem;
-      background: #e0e7ff;
+      background: var(--accent);
       padding: 1rem;
+      position: relative;
     }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 2rem;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav li {
+      position: relative;
+    }
+
     nav a {
       text-decoration: none;
-      color: #1e3a8a;
+      color: var(--text-dark);
       font-weight: bold;
+      padding: 0.5rem 1rem;
+      display: block;
     }
+
+    nav li:hover > ul {
+      display: block;
+    }
+
+    nav ul ul {
+      display: none;
+      position: absolute;
+      background: var(--white);
+      top: 100%;
+      left: 0;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      border-radius: 0.5rem;
+      overflow: hidden;
+    }
+
+    nav ul ul li {
+      width: 150px;
+    }
+
     main {
       padding: 2rem;
       max-width: 900px;
       margin: auto;
     }
-    .category {
-      margin-top: 2rem;
+
+    .section {
+      background: var(--white);
+      padding: 2rem;
+      border-radius: 1rem;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+      margin-bottom: 2rem;
     }
+
     .category h2 {
-      color: #4f46e5;
-      border-bottom: 2px solid #c7d2fe;
+      color: #6b7280;
+      border-bottom: 2px solid var(--accent);
       padding-bottom: 0.3rem;
     }
+
     .subcategory {
       margin-top: 1rem;
     }
+
     .project {
-      background: white;
+      background: var(--accent);
       padding: 1rem;
-      border: 1px solid #ddd;
       border-radius: 8px;
       margin-bottom: 1rem;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
     }
+
     footer {
       text-align: center;
       padding: 1rem;
-      background: #e0e7ff;
-      margin-top: 4rem;
-      color: #1e3a8a;
+      background: var(--secondary);
+      color: var(--text-dark);
     }
   </style>
 </head>
@@ -67,56 +119,66 @@
     <h1>My Portfolio</h1>
     <p>Computer Science Student | Developer | Game Enthusiast</p>
   </header>
+
   <nav>
-    <a href="#home">Home</a>
-    <a href="#projects">Projects</a>
-    <a href="#contact">Contact</a>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#projects">Projects</a>
+        <ul>
+          <li><a href="#diploma">Diploma</a></li>
+          <li><a href="#degree">Degree</a></li>
+        </ul>
+      </li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
   </nav>
+
   <main>
-    <section id="home">
+    <section id="home" class="section">
       <h2>Welcome</h2>
-      <p>This is my personal portfolio showcasing projects from my diploma and degree journey.</p>
+      <p>Hello! I'm a Computer Science student with a passion for building websites and games. This portfolio showcases projects I’ve created throughout my academic journey.</p>
     </section>
 
-    <section id="projects" class="category">
+    <section id="projects" class="section">
       <h2>Projects</h2>
+    </section>
 
-      <div class="subcategory">
-        <h3>Diploma</h3>
-        <div class="project">
-          <h4>Diploma Project 1</h4>
-          <p>Description of the project here. Tech used: HTML, CSS, JavaScript</p>
-          <a href="#">View Project</a>
-        </div>
-        <div class="project">
-          <h4>Diploma Project 2</h4>
-          <p>Description of the project here. Tech used: Python, Flask</p>
-          <a href="#">View Project</a>
-        </div>
+    <section id="diploma" class="section">
+      <h3>Diploma Projects</h3>
+      <div class="project">
+        <h4>Diploma Project 1</h4>
+        <p>Description of the project here. Tech used: HTML, CSS, JavaScript</p>
+        <a href="#">View Project</a>
       </div>
-
-      <div class="subcategory">
-        <h3>Degree</h3>
-        <div class="project">
-          <h4>Degree Project 1</h4>
-          <p>Description of the project here. Tech used: React, Node.js</p>
-          <a href="#">View Project</a>
-        </div>
-        <div class="project">
-          <h4>Degree Game Project</h4>
-          <p>Browser game built with Unity WebGL. Tech used: Unity, C#</p>
-          <a href="#">Play Game</a>
-        </div>
+      <div class="project">
+        <h4>Diploma Project 2</h4>
+        <p>Description of the project here. Tech used: Python, Flask</p>
+        <a href="#">View Project</a>
       </div>
     </section>
 
-    <section id="contact" class="category">
+    <section id="degree" class="section">
+      <h3>Degree Projects</h3>
+      <div class="project">
+        <h4>Degree Project 1</h4>
+        <p>Description of the project here. Tech used: React, Node.js</p>
+        <a href="#">View Project</a>
+      </div>
+      <div class="project">
+        <h4>Degree Game Project</h4>
+        <p>Browser game built with Unity WebGL. Tech used: Unity, C#</p>
+        <a href="#">Play Game</a>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
       <h2>Contact</h2>
       <p>You can reach me at: <strong>your.email@example.com</strong></p>
       <p>GitHub: <a href="https://github.com/yourusername">yourusername</a></p>
       <p>LinkedIn: <a href="https://linkedin.com/in/yourprofile">yourprofile</a></p>
     </section>
   </main>
+
   <footer>
     &copy; 2025 Your Name. All rights reserved.
   </footer>
