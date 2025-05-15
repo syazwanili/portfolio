@@ -1,186 +1,330 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>My Portfolio</title>
-  <style>
-    :root {
-      --primary: #a5c8e1;
-      --secondary: #f4dada;
-      --accent: #f5e1fd;
-      --text-dark: #333;
-      --text-light: #555;
-      --white: #fff;
-    }
+  <meta charset="UTF-8">
+  <meta name="description" content="Syazwani's Portfolio">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      margin: 0;
-      background: var(--primary);
-      color: var(--text-dark);
-    }
+  <!-- Title -->
+  <title>Syazwani's Portfolio</title>
 
-    header {
-      background: var(--secondary);
-      color: var(--text-dark);
-      padding: 2rem;
-      text-align: center;
-    }
+  <!-- Favicon -->
+  <link rel="icon" href="./img/core-img/favicon.ico">
 
-    nav {
-      display: flex;
-      justify-content: center;
-      background: var(--accent);
-      padding: 1rem;
-      position: relative;
-    }
+  <!-- Core Stylesheet -->
+  <link rel="stylesheet" href="style.css">
 
-    nav ul {
-      list-style: none;
-      display: flex;
-      gap: 2rem;
-      margin: 0;
-      padding: 0;
-    }
-
-    nav li {
-      position: relative;
-    }
-
-    nav a {
-      text-decoration: none;
-      color: var(--text-dark);
-      font-weight: bold;
-      padding: 0.5rem 1rem;
-      display: block;
-    }
-
-    nav li:hover > ul {
-      display: block;
-    }
-
-    nav ul ul {
-      display: none;
-      position: absolute;
-      background: var(--white);
-      top: 100%;
-      left: 0;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-      border-radius: 0.5rem;
-      overflow: hidden;
-    }
-
-    nav ul ul li {
-      width: 150px;
-    }
-
-    main {
-      padding: 2rem;
-      max-width: 900px;
-      margin: auto;
-    }
-
-    .section {
-      background: var(--white);
-      padding: 2rem;
-      border-radius: 1rem;
-      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
-      margin-bottom: 2rem;
-    }
-
-    .category h2 {
-      color: #6b7280;
-      border-bottom: 2px solid var(--accent);
-      padding-bottom: 0.3rem;
-    }
-
-    .subcategory {
-      margin-top: 1rem;
-    }
-
-    .project {
-      background: var(--accent);
-      padding: 1rem;
-      border-radius: 8px;
-      margin-bottom: 1rem;
-    }
-
-    footer {
-      text-align: center;
-      padding: 1rem;
-      background: var(--secondary);
-      color: var(--text-dark);
-    }
-  </style>
 </head>
+
+<style>
+  img.square-img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.classy-nav-container .classy-navbar .classynav ul li.current-item a::after {
+    content: '';
+    position: absolute;
+    width: 80%;
+    height: 2px;
+    background-color: #f5f0f3;
+    bottom: 0;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+.service-area i {
+    font-size: 42px;
+    margin-bottom: 30px;
+    color: #eaa2a2;
+    display: block;
+}
+
+.welcome-text {
+    margin-top: 0;
+}
+
+.welcome-text a {
+    padding: 0;
+    display: inline-block;
+    font-size: 16px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #eaa2a2;
+    font-weight: 600;
+}
+
+.custom-btn {
+  background-color: #eaa2a2;
+  border: none;
+  color: white;
+  padding: 10px 25px;
+  font-weight: bold;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  display: inline-block;
+}
+
+.custom-btn {
+  background-color: #eaa2a2;
+  border: none;
+  color: white;
+  padding: 10px 25px;
+  font-weight: bold;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  display: inline-block;
+}
+
+.custom-btn:hover {
+  background-color: #ed489d; /* darker pink on hover */
+  color: white;
+  text-decoration: none;
+}
+.single-service-area:hover h5 {
+  color: inherit !important;
+}
+
+.container:hover h5 {
+  color: inherit !important;
+}
+
+.breakpoint-off .classynav ul li .dropdown {
+    background-color: #eaa2a2;
+}
+
+.classynav ul#nav li a {
+  transition: color 0.3s ease, font-weight 0.3s ease, transform 0.3s ease;
+}
+
+.classynav ul#nav li a:hover {
+  transform: scale(1.05); /* makes the text 10% bigger */
+}
+
+
+
+</style>
+
 <body>
-  <header>
-    <h1>My Portfolio</h1>
-    <p>Computer Science Student | Developer | Game Enthusiast</p>
+  <!-- Preloader -->
+  <div id="preloader">
+    <div class="wrapper">
+      <div class="cssload-loader"></div>
+    </div>
+  </div>
+
+  <!-- ***** Header Area Start ***** -->
+  <header class="header-area">
+    <!-- Main Header Start -->
+    <div class="main-header-area">
+      <div class="classy-nav-container breakpoint-off">
+        <!-- Classy Menu -->
+        <nav class="classy-navbar justify-content-between" id="monaNav">
+
+          <!-- Background Curve -->
+          <div class="bg-curve" style="background-image: url(./img/core-img/curve3.png);"></div>
+
+          <!-- Logo -->
+          <a class="nav-brand" href="index.html"><img src="./img/core-img/logo2.png" alt="" style="height: 70px;"></a>
+
+          <!-- Navbar Toggler -->
+          <div class="classy-navbar-toggler">
+            <span class="navbarToggler"><span></span><span></span><span></span></span>
+          </div>
+
+          <!-- Menu -->
+          <div class="classy-menu">
+            <!-- Menu Close Button -->
+            <div class="classycloseIcon">
+              <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
+            </div>
+
+            <!-- Nav Start -->
+            <div class="classynav">
+              <ul id="nav">
+                <li class="current-item"><a href="./index.html">Home</a></li>
+                <li><a href="./projects.html">Projects</a>
+                <ul class="dropdown">
+                  <li><a href="./projects.html/#tab-1">Degree</a></li>
+                  <li><a href="#tab-2">Diploma</a></li>
+                </ul>
+              </li>
+                <li><a href="#footer">Contact</a></li>
+              </ul>
+            </div>
+            <!-- Nav End -->
+
+          </div>
+        </nav>
+      </div>
+    </div>
   </header>
+  <!-- ***** Header Area End ***** -->
 
-  <nav>
-    <ul>
-      <li><a href="#home">Home</a></li>
-      <li><a href="#projects">Projects</a>
-        <ul>
-          <li><a href="#diploma">Diploma</a></li>
-          <li><a href="#degree">Degree</a></li>
-        </ul>
-      </li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
+  <!-- ***** Welcome Area Start ***** -->
+  <section class="welcome-area">
+    <!-- Welcome Slides -->
+    <div class="welcome-slides owl-carousel">
 
-  <main>
-    <section id="home" class="section">
-      <h2>Welcome</h2>
-      <p>Hello! I'm a Computer Science student with a passion for building websites and games. This portfolio showcases projects I’ve created throughout my academic journey.</p>
-    </section>
-
-    <section id="projects" class="section">
-      <h2>Projects</h2>
-    </section>
-
-    <section id="diploma" class="section">
-      <h3>Diploma Projects</h3>
-      <div class="project">
-        <h4>Diploma Project 1</h4>
-        <p>Description of the project here. Tech used: HTML, CSS, JavaScript</p>
-        <a href="#">View Project</a>
+      <!-- Single Welcome Slide -->
+      <div class="single-welcome-slide">
+        <!-- Background Curve -->
+        <div class="bg-curve" style="background-image: url(./img/core-img/curve3.png);"></div>
+        <!-- Main Background Image -->
+        <div class="main-bg-img bg-img" data-animation="fadeInUpBig" data-delay="200ms" style="background-image: url(./img/bg-img/laptop.jpg);right: 6%;"></div>
+        <!-- Welcome Text -->
+        <div class="container h-100">
+          <div class="row h-100 align-items-center">
+            <div class="col-12">
+              <div class="welcome-text">
+                <h2 style="color: #eaa2a2;" data-animation="bounceInUp" data-delay="400ms">Syazwani <br>
+                  Ili's Portfolio</h2>
+                <h5 data-animation="bounceInUp" data-delay="600ms">Bachelors in Computer Science (Hons.)</h5>
+                <a href="#aboutus" class="btn" data-animation="bounceInUp" data-delay="800ms">More Details <i class="arrow_right"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Social Info -->
+        <div id="aboutus" class="social-info">
+          <a  href="https://www.linkedin.com/in/syazwani-ili-abu-hassan/" data-animation="bounceInDown" data-delay="1000ms"><i class="fa fa-linkedin"></i> <span>LinkedIn</span></a>
+          <a href="https://www.youtube.com/@syazwaniiliabuhassan" data-animation="bounceInDown" data-delay="1100ms"><i class="fa fa-youtube"></i> <span>Youtube</span></a>
+        </div>
       </div>
-      <div class="project">
-        <h4>Diploma Project 2</h4>
-        <p>Description of the project here. Tech used: Python, Flask</p>
-        <a href="#">View Project</a>
-      </div>
-    </section>
 
-    <section id="degree" class="section">
-      <h3>Degree Projects</h3>
-      <div class="project">
-        <h4>Degree Project 1</h4>
-        <p>Description of the project here. Tech used: React, Node.js</p>
-        <a href="#">View Project</a>
-      </div>
-      <div class="project">
-        <h4>Degree Game Project</h4>
-        <p>Browser game built with Unity WebGL. Tech used: Unity, C#</p>
-        <a href="#">Play Game</a>
-      </div>
-    </section>
+    </div>
+  </section>
+  <!-- ***** Welcome Area End ***** -->
 
-    <section id="contact" class="section">
-      <h2>Contact</h2>
-      <p>You can reach me at: <strong>your.email@example.com</strong></p>
-      <p>GitHub: <a href="https://github.com/yourusername">yourusername</a></p>
-      <p>LinkedIn: <a href="https://linkedin.com/in/yourprofile">yourprofile</a></p>
-    </section>
-  </main>
+  <!-- ***** About Us Area Start ***** -->
+  <section class="mona-about-us-area mb-30 section-padding-80-0" >
+    <div class="container">
+      <div class="row">
 
-  <footer>
-    &copy; 2025 Your Name. All rights reserved.
+        <!-- About Us Content -->
+        <div class="col-12 col-lg-12">
+          <div class="about-us-content mb-50 wow fadeInUp" data-wow-delay="700ms" style="padding-left: 0;">
+            <h2>Hi! my name is Syazwani Ili</h2>
+            <p>I am a recent graduate in Computer Science from Universiti Teknologi MARA (UiTM) Jasin. Throughout my academic journey, I developed a strong foundation in software development, web development, and also game design.
+
+              I am passionate about creating interactive and user-focused digital experiences. My portfolio reflects a range of projects—from web applications to browser-based games—demonstrating both technical proficiency and creative problem-solving.
+              
+              I am always eager to learn new tools, collaborate on innovative projects, and continuously grow as a developer. I take pride in building solutions that are both functional and visually engaging.
+              
+              </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+          <div class="col-12 col-md-3 mb-4">
+            <img src="./img/bg-img/w.jpeg" class="img-fluid rounded square-img" alt="Project 1">
+          </div>
+          <div class="col-12 col-md-3 mb-4">
+            <img src="./img/bg-img/me.JPG" class="img-fluid rounded square-img" alt="Project 2">
+          </div>
+          <div class="col-12 col-md-3 mb-4">
+            <img src="./img/bg-img/w3.JPG" class="img-fluid rounded square-img" alt="Project 3">
+          </div>
+          <div class="col-12 col-md-3 mb-4">
+            <img src="./img/bg-img/w4.jpeg" class="img-fluid rounded square-img" alt="Project 4">
+          </div>
+        
+      </div>
+    </div>
+
+    <!-- Single Service Area -->
+    <div class="container">
+      <div class="service-area mt-80">
+        <div class="row">
+
+          <!-- Single Service Area -->
+          <div class="col-12 col-sm-12 col-lg-12">
+            <div class="single-service-area mb-50 wow fadeInUp" data-wow-delay="100ms">
+              <i class="fa fa-briefcase"></i>
+              <h5>Browse my portfolio by clicking the button below</h5>
+              <a href="./projects.html" class="custom-btn btn btn-primary mt-3" style="border: none; color: white; padding: 10px 20px; font-weight: bold; border-radius: 5px;">View Projects</a>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ***** About Us Area End ***** -->
+
+
+
+
+
+
+  <!-- ***** Footer Area Start ***** -->
+  <footer class="footer-area section-padding-80-0" id="footer">
+    <div class="container">
+      <div class="row justify-content-between">
+
+        <!-- Single Footer Widget -->
+        <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+          <div class="single-footer-widget mb-60">
+            <!-- Logo -->
+            <a href="#" class="d-block mb-4"><img src="./img/core-img/logo2.png" alt=""></a>
+            <p>Digital portfolio for all projects done by me.</p>
+            <div class="copywrite-text">
+              <p>&copy; 
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | Made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Syazwani Ili</a>
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Single Footer Widget -->
+        <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+          <div class="single-footer-widget mb-60">
+            
+          </div>
+        </div>
+
+        <!-- Single Footer Widget -->
+        <div class="col-12 col-lg-4 col-xl-3">
+          <div class="single-footer-widget mb-60">
+            <!-- Widget Title -->
+            <h4 class="widget-title">Contact Me!</h4>
+            <!-- Social Info -->
+            <div class="footer-social-info">
+              <a href="https://www.linkedin.com/in/syazwani-ili-abu-hassan/" class="linkedin" data-toggle="tooltip" data-placement="top" title="LinkedIn"><i class="fa fa-linkedin"></i></a>
+              <a href="https://www.youtube.com/@syazwaniiliabuhassan" class="youtube" data-toggle="tooltip" data-placement="top" title="YouTube"><i class="fa fa-youtube-play"></i></a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
   </footer>
+  <!-- ***** Footer Area End ***** -->
+
+  <!-- ******* All JS ******* -->
+  <!-- jQuery js -->
+  <script src="js/jquery.min.js"></script>
+  <!-- Popper js -->
+  <script src="js/popper.min.js"></script>
+  <!-- Bootstrap js -->
+  <script src="js/bootstrap.min.js"></script>
+  <!-- All js -->
+  <script src="js/mona.bundle.js"></script>
+  <!-- Active js -->
+  <script src="js/default-assets/active.js"></script>
+
 </body>
+
 </html>

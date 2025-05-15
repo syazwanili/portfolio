@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Syazwani's Portfolio - Projects">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Title -->
+  <title>Syazwani's Portfolio - Projects</title>
+
+  <!-- Favicon -->
+  <link rel="icon" href="./img/core-img/favicon.ico">
+
+  <!-- Core Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<style>
+ .post-thumbnail {
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* default shadow */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.post-thumbnail:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.2); /* stronger shadow on hover */
+}
+
+.post-thumbnail img {
+  height: 235px;
+  width: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+
+
+  .classy-nav-container .classy-navbar .classynav ul li.current-item a::after {
+    content: '';
+    position: absolute;
+    width: 80%;
+    height: 2px;
+    background-color: #f5f0f3;
+    bottom: 0;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+.model-tab-area .nav-tabs .nav-link.active {
+    color: #eaa2a2;
+}
+
+.breakpoint-off .classynav ul li .dropdown {
+    background-color: #eaa2a2;
+}
+
+.classynav ul#nav li a {
+  transition: color 0.3s ease, font-weight 0.3s ease, transform 0.3s ease;
+}
+
+.classynav ul#nav li a:hover {
+  transform: scale(1.05); /* makes the text 10% bigger */
+}
+</style>
+
+<body>
+  <!-- Preloader -->
+  <div id="preloader">
+    <div class="wrapper">
+      <div class="cssload-loader"></div>
+    </div>
+  </div>
+
+  <!-- ***** Header Area Start ***** -->
+  <header class="header-area">
+    <!-- Main Header Start -->
+    <div class="main-header-area">
+      <div class="classy-nav-container breakpoint-off">
+        <!-- Classy Menu -->
+        <nav class="classy-navbar justify-content-between" id="monaNav">
+
+          <!-- Background Curve -->
+          <div class="bg-curve" style="background-image: url(./img/core-img/curve3.png);"></div>
+
+          <!-- Logo -->
+          <a class="nav-brand" href="index.html"><img src="./img/core-img/logo2.png" alt="" style="height: 70px;"></a>
+
+          <!-- Navbar Toggler -->
+          <div class="classy-navbar-toggler">
+            <span class="navbarToggler"><span></span><span></span><span></span></span>
+          </div>
+
+          <!-- Menu -->
+          <div class="classy-menu">
+            <!-- Menu Close Button -->
+            <div class="classycloseIcon">
+              <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
+            </div>
+
+            <!-- Nav Start -->
+            <div class="classynav">
+              <ul id="nav">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./projects.html">Projects</a>
+                  <ul class="dropdown">
+                    <li><a href="./projects.html/#tab-1">Degree</a></li>
+                    <li><a href="#tab-2">Diploma</a></li>
+                  </ul>
+                <li><a href="#footer">Contact</a></li>
+              </ul>
+            </div>
+            <!-- Nav End -->
+
+          </div>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <!-- ***** Header Area End ***** -->
+
+  <!-- ***** Breadcrumb Area Start ***** -->
+  <div class="breadcumb-area">
+    <div class="container h-100">
+      <div class="row h-100 align-items-end">
+        <div class="col-12">
+          <div class="breadcumb--con">
+            <h2 class="title">Projects</h2>
+            <nav aria-label="breadcrumb">
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="#"><i class="fa fa-home"></i> Home</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Projects</li>
+              </ol>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- ***** Breadcrumb Area End ***** -->
+
+  <!-- ***** Model Area Start ***** -->
+  <section class="mona-model-area model-page section-padding-80-0 mb-30">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="model-tab-area">
+            <ul class="nav nav-tabs mb-50" id="mona_modelTab" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link active" id="tab1" data-toggle="tab" href="#tab-1" role="tab" aria-controls="tab-1"
+                  aria-selected="true">Degree</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="tab2" data-toggle="tab" href="#tab-2" role="tab" aria-controls="tab-2"
+                  aria-selected="false">Diploma</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mona Tab Content -->
+    <div class="mona-tab-content">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12">
+            <div class="tab-content" id="mona_modelTabContent">
+
+              <!-- Tab 1: Degree -->
+              <div class="tab-pane fade show active" id="tab-1" role="tabpanel" aria-labelledby="tab1">
+                <div class="row">
+
+                  <div class="col-12 col-sm-6 col-lg-4">
+                    <div class="single-blog-post mb-30">
+                      <div class="post-thumbnail slide-post owl-carousel">
+                        <a href="#"><img src="./img/bg-img/c2.png" alt="" style="height: 228px;"></a>
+                        <a href="#"><img src="./img/bg-img/c1.png" alt="" style="height: 228px;"></a>
+                      </div>
+                      <div class="post-content">
+                        <a href="#" class="post-title">[Prototype] Juice Carton Packaging Design</a>
+                        <span class="post-date">20 Apr 2022</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-12 col-sm-6 col-lg-4">
+                    <div class="single-blog-post mb-30">
+                      <div class="post-thumbnail slide-post owl-carousel">
+                        <a href="#"><img src="./img/bg-img/ww2.png" alt=""></a>
+                        <a href="#"><img src="./img/bg-img/ww1.png" alt=""></a>
+                      </div>
+                      <div class="post-content">
+                        <a href="#" class="post-title">[Website] WheelsWave Car Booking System</a>
+                        <span class="post-date">22 Dec 2023</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-12 col-sm-6 col-lg-4">
+                    <div class="single-blog-post mb-30">
+                      <div class="post-thumbnail slide-post owl-carousel">
+                        <a href="#"><img src="./img/bg-img/fyp2.png" alt=""></a>
+                        <a href="#"><img src="./img/bg-img/fyp3.png" alt=""></a>
+                        <a href="#"><img src="./img/bg-img/fyp4.png" alt=""></a>
+                      </div>
+                      <div class="post-content">
+                        <a href="#" class="post-title">[Website] Student Clustering System Dashboard Final Year Project</a>
+                        <span class="post-date">12 Jul 2024</span>
+                      </div>
+                    </div>
+                  </div>
+
+
+
+
+
+
+
+                  <!-- Row 2 -->
+
+                  <div class="col-12 col-sm-6 col-lg-4">
+                    <div class="single-blog-post mb-30">
+                      <div class="post-thumbnail slide-post owl-carousel">
+                        <a href="#"><img src="./img/bg-img/vs1.png" alt=""></a>
+                        <a href="#"><img src="./img/bg-img/vs2.png" alt=""></a>
+                        <a href="#"><img src="./img/bg-img/vs3.png" alt=""></a>
+                      </div>
+                      <div class="post-content">
+                        <a href="#" class="post-title">[Website] Van Stapele Dessert Ordering System</a>
+                        <span class="post-date">20 Dec 2024</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-12 col-sm-6 col-lg-4">
+                    <div class="single-blog-post mb-30">
+                      <div class="post-thumbnail slide-post owl-carousel">
+                        <a href="#"><img src="./img/bg-img/wwa1.png" alt=""></a>
+                      </div>
+                      <div class="post-content">
+                        <a href="#" class="post-title">[App] WheelsWave Car Booking App</a>
+                        <span class="post-date">12 Jul 2024</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-12 col-sm-6 col-lg-4">
+                    <div class="single-blog-post mb-30">
+                      <div class="post-thumbnail slide-post owl-carousel">
+                        <a href="#"><img src="./img/bg-img/kg1.png" alt=""></a>
+                        <a href="#"><img src="./img/bg-img/kg2.png" alt=""></a>
+                        <a href="#"><img src="./img/bg-img/kg4.png" alt=""></a>
+                      </div>
+                      <div class="post-content">
+                        <a href="#" class="post-title">[Prototype] KAGAMI Smart Mirror</a>
+                        <span class="post-date">24 Nov 2023</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Row 3 -->
+
+                  <div class="col-12 col-sm-6 col-lg-4">
+                    <div class="single-blog-post mb-30">
+                      <div class="post-thumbnail slide-post owl-carousel">
+                        <a href="#"><img src="./img/bg-img/letsrun.png" alt=""></a>
+                        <a href="#"><img src="./img/bg-img/lr2.png" alt=""></a>
+                      </div>
+                      <div class="post-content">
+                        <a href="#" class="post-title">[Website] Let's Run Event Registration System</a>
+                        <span class="post-date">24 Nov 2023</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-12 col-sm-6 col-lg-4">
+                    <div class="single-blog-post mb-30">
+                      <div class="post-thumbnail slide-post owl-carousel">
+                        <a href="#"><img src="./img/bg-img/1.png" alt=""></a>
+                        <a href="#"><img src="./img/bg-img/2.png" alt=""></a>
+                      </div>
+                      <div class="post-content">
+                        <a href="#" class="post-title">[Website] Sunway Lagoon Night Park Map Ride Calculation
+                          System</a>
+                        <span class="post-date">4 Jul 2024</span>
+                      </div>
+                    </div>
+                  </div>
+
+
+                </div>
+              </div>
+
+
+              <!-- Tab 2: Diploma -->
+              <div class="tab-pane fade" id="tab-2" role="tabpanel" aria-labelledby="tab2">
+                <div class="row">
+
+                  <!-- Single Blog Post -->
+                  <div class="col-12 col-lg-4">
+                    <div class="single-blog-post mb-30">
+                      <div class="post-thumbnail slide-post owl-carousel">
+                        <a href="#"><img src="./img/bg-img/Web 1.png" alt=""></a>
+                        <a href="#"><img src="./img/bg-img/Web 2.png" alt=""></a>
+                      </div>
+                      <div class="post-content">
+                        <a href="#" class="post-title">[Website] SIF & Co</a>
+                        <span class="post-date">14 Nov 2019</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Single Blog Post -->
+                  <div class="col-12 col-lg-4">
+                    <div class="single-blog-post mb-30">
+                      <div class="post-thumbnail">
+                        <a href="#"><img src="./img/bg-img/ing.png" alt=""></a>
+                      </div>
+                      <div class="post-content">
+                        <a href="#" class="post-title">[Website] Ingermark Project</a>
+                        <span class="post-date">15 May 2020</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Single Blog Post -->
+                  <div class="col-12 col-lg-4">
+                    <div class="single-blog-post mb-30">
+                      <div class="post-thumbnail slide-post owl-carousel">
+                        <a href="#"><img src="./img/bg-img/cx2.png" alt=""></a>
+                        <a href="#"><img src="./img/bg-img/cx1.png" alt=""></a>
+                      </div>
+                      <div class="post-content">
+                        <a href="#" class="post-title">[Website] Internship CollectXpress Juris Technologies</a>
+                        <span class="post-date">14 Jan 2021</span>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+              <!-- End of Tab 2 -->
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ***** Model Area End ***** -->
+
+
+
+
+
+
+
+
+ <!-- ***** Footer Area Start ***** -->
+ <footer class="footer-area section-padding-80-0" id="footer">
+  <div class="container">
+    <div class="row justify-content-between">
+
+      <!-- Single Footer Widget -->
+      <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+        <div class="single-footer-widget mb-60">
+          <!-- Logo -->
+          <a href="#" class="d-block mb-4"><img src="./img/core-img/logo2.png" alt=""></a>
+          <p>Digital portfolio for all projects done by me.</p>
+          <div class="copywrite-text">
+            <p>&copy; 
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | Made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Syazwani Ili</a>
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Single Footer Widget -->
+      <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+        <div class="single-footer-widget mb-60">
+          
+        </div>
+      </div>
+
+      <!-- Single Footer Widget -->
+      <div class="col-12 col-lg-4 col-xl-3">
+        <div class="single-footer-widget mb-60">
+          <!-- Widget Title -->
+          <h4 class="widget-title">Contact Me!</h4>
+          <!-- Social Info -->
+          <div class="footer-social-info">
+            <a href="https://www.linkedin.com/in/syazwani-ili-abu-hassan/" class="linkedin" data-toggle="tooltip" data-placement="top" title="LinkedIn"><i class="fa fa-linkedin"></i></a>
+            <a href="https://www.youtube.com/@syazwaniiliabuhassan" class="youtube" data-toggle="tooltip" data-placement="top" title="YouTube"><i class="fa fa-youtube-play"></i></a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</footer>
+<!-- ***** Footer Area End ***** -->
+
+<!-- ******* All JS ******* -->
+<!-- jQuery js -->
+<script src="js/jquery.min.js"></script>
+<!-- Popper js -->
+<script src="js/popper.min.js"></script>
+<!-- Bootstrap js -->
+<script src="js/bootstrap.min.js"></script>
+<!-- All js -->
+<script src="js/mona.bundle.js"></script>
+<!-- Active js -->
+<script src="js/default-assets/active.js"></script>
+
+</body>
+
+</html>
