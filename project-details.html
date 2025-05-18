@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Syazwani's Portfolio - Projects">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Title -->
+    <title>Syazwani's Portfolio - Projects Details</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+
+    <!-- Core Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<style>
+    .breadcrumb-area {
+        background-color: #f8f9fa;
+        padding: 50px 0;
+        text-align: center;
+    }
+
+    .breadcrumb-content h2 {
+        font-size: 2.5rem;
+        color: #111;
+    }
+
+    .project-content {
+        padding: 60px 15px;
+    }
+
+    #project-date {
+        color: #888;
+        font-size: 0.9rem;
+    }
+
+    #project-images{
+        display: flex;
+    justify-content: center;
+    }
+
+    #project-images img {
+        width: 70%;
+        height: auto;
+        margin-bottom: 20px;
+        border-radius: 10px;
+    }
+
+    #project-description {
+        margin-top: 20px;
+        line-height: 1.7;
+        font-size: 1rem;
+    }
+
+    #project-tags {
+        list-style: none;
+        padding-left: 0;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-top: 25px;
+    }
+
+    #project-tags li {
+        background: #f39;
+        color: white;
+        padding: 6px 14px;
+        border-radius: 30px;
+        font-size: 0.85rem;
+    }
+
+    #breadcrumb-project-tags {
+        list-style: none;
+        padding-left: 0;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    #breadcrumb-project-tags li {
+        background: #f39;
+        color: white;
+        padding: 6px 14px;
+        border-radius: 30px;
+        font-size: 0.85rem;
+    }
+
+    .container-custom {
+        margin: 0 auto;
+    }
+
+    .classy-nav-container .classy-navbar .classynav ul li.current-item a::after {
+        content: '';
+        position: absolute;
+        width: 80%;
+        height: 2px;
+        background-color: #f5f0f3;
+        bottom: 0;
+        left: 50%;
+        -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        transform: translateX(-50%);
+        z-index: 1;
+    }
+
+    .model-tab-area .nav-tabs .nav-link.active {
+        color: #eaa2a2;
+    }
+
+    .breakpoint-off .classynav ul li .dropdown {
+        background-color: #eaa2a2;
+    }
+
+    .classynav ul#nav li a {
+        transition: color 0.3s ease, font-weight 0.3s ease, transform 0.3s ease;
+    }
+
+    .classynav ul#nav li a:hover {
+        transform: scale(1.05);
+        /* makes the text 10% bigger */
+    }
+
+    .product-gallery {
+        max-width: 100%;
+        margin: auto;
+        text-align: center;
+    }
+
+    .main-image img {
+        width: 100%;
+        max-height: 500px;
+        object-fit: contain;
+        border-radius: 10px;
+    }
+
+    .thumbnails-wrapper {
+        display: flex;
+        align-items: normal;
+        margin-top: 15px;
+        overflow: hidden;
+        justify-content: center;
+    }
+
+    .arrow {
+        background-color: #f5f5f5;
+        border: none;
+        font-size: 20px;
+        padding: 6px 12px;
+        cursor: pointer;
+        border-radius: 5px;
+        user-select: none;
+    }
+
+    .thumbnails {
+        display: flex;
+        gap: 10px;
+        overflow-x: auto;
+        scrollbar-width: none;
+        -ms-overflow-style: none;
+        scroll-behavior: smooth;
+        padding: 0 10px;
+    }
+
+    .thumbnails::-webkit-scrollbar {
+        display: none;
+    }
+
+    .thumb {
+        width: 80px;
+        height: 80px;
+        object-fit: cover;
+        cursor: pointer;
+        border: 2px solid transparent;
+        border-radius: 5px;
+        flex-shrink: 0;
+        transition: 0.2s;
+    }
+
+    .thumb.active {
+        border-color: #ff4081;
+    }
+</style>
+
+<body>
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="wrapper">
+            <div class="cssload-loader"></div>
+        </div>
+    </div>
+
+    <!-- ***** Header Area Start ***** -->
+    <header class="header-area">
+        <!-- Main Header Start -->
+        <div class="main-header-area">
+            <div class="classy-nav-container breakpoint-off">
+                <!-- Classy Menu -->
+                <nav class="classy-navbar justify-content-between" id="monaNav">
+
+                    <!-- Background Curve -->
+                    <div class="bg-curve" style="background-image: url(./img/core-img/curve3.png);"></div>
+
+                    <!-- Logo -->
+                    <a class="nav-brand" href="index.html"><img src="./img/core-img/logo2.png" alt=""
+                            style="height: 70px;"></a>
+
+                    <!-- Navbar Toggler -->
+                    <div class="classy-navbar-toggler">
+                        <span class="navbarToggler"><span></span><span></span><span></span></span>
+                    </div>
+
+                    <!-- Menu -->
+                    <div class="classy-menu">
+                        <!-- Menu Close Button -->
+                        <div class="classycloseIcon">
+                            <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
+                        </div>
+
+                        <!-- Nav Start -->
+                        <div class="classynav">
+                            <ul id="nav">
+                                <li><a href="./index.html">Home</a></li>
+                                <li><a href="./projects.html">Projects</a>
+                                    <ul class="dropdown">
+                                        <li><a href="./projects.html/#tab-1">Degree</a></li>
+                                        <li><a href="#tab-2">Diploma</a></li>
+                                    </ul>
+                                <li><a href="#footer">Contact</a></li>
+                            </ul>
+                        </div>
+                        <!-- Nav End -->
+
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <!-- ***** Header Area End ***** -->
+
+    <!-- ***** Breadcrumb Area Start ***** -->
+    <div class="breadcumb-area">
+        <div class="container h-100">
+            <div class="row h-100 align-items-end">
+                <div class="col-12">
+                    <div class="breadcumb--con">
+                        <h2 class="title">Project's Details</h2>
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item"><a href="./index.html"><i class="fa fa-home"></i> Home</a>
+                                </li>
+                                <li class="breadcrumb-item"><a href="./projects.html"></i> Projects</a></li>
+                                <li class="breadcrumb-item active" id="breadcrumb-project-title" aria-current="page">
+                                </li>
+                            </ol>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ***** Breadcrumb Area End ***** -->
+
+    <!-- Project Content -->
+    <section class="project-content">
+        <div class="container container-custom">
+            <h1 id="project-title" style="font-size: 2.25rem;font-weight: 600;margin-bottom: 10px;"></h1>
+            <ul id="breadcrumb-project-tags"></ul><br>
+            <span id="project-date"></span><br><br>
+
+
+            <div id="project-images">
+                <img id="currentImage" src="" alt="Main Image">
+            </div>
+
+            <div class="thumbnails-wrapper">
+                <button id="thumbPrev" class="arrow">&lt;</button>
+                <div class="thumbnails" id="thumbnailContainer">
+                </div>
+                <button id="thumbNext" class="arrow">&gt;</button>
+            </div>
+        
+
+
+
+        <p id="project-description"></p>
+        <ul id="project-tags"></ul>
+
+        </div>
+    </div>
+    </section>
+
+    <script src="projects-data.js"></script>
+    <script src="project-detail.js"></script>
+
+
+
+
+
+    <!-- ***** Footer Area Start ***** -->
+    <footer class="footer-area section-padding-80-0" id="footer">
+        <div class="container">
+            <div class="row justify-content-between">
+
+                <!-- Single Footer Widget -->
+                <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+                    <div class="single-footer-widget mb-60">
+                        <!-- Logo -->
+                        <a href="#" class="d-block mb-4"><img src="./img/core-img/logo2.png" alt=""></a>
+                        <p>Digital portfolio for all projects done by me.</p>
+                        <div class="copywrite-text">
+                            <p>&copy;
+                                <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                                Copyright &copy;
+                                <script>document.write(new Date().getFullYear());</script> All rights reserved | Made
+                                with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com"
+                                    target="_blank">Syazwani Ili</a>
+                                <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Single Footer Widget -->
+                <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+                    <div class="single-footer-widget mb-60">
+
+                    </div>
+                </div>
+
+                <!-- Single Footer Widget -->
+                <div class="col-12 col-lg-4 col-xl-3">
+                    <div class="single-footer-widget mb-60">
+                        <!-- Widget Title -->
+                        <h4 class="widget-title">Contact Me!</h4>
+                        <!-- Social Info -->
+                        <div class="footer-social-info">
+                            <a href="https://www.linkedin.com/in/syazwani-ili-abu-hassan/" class="linkedin"
+                                data-toggle="tooltip" data-placement="top" title="LinkedIn"><i
+                                    class="fa fa-linkedin"></i></a>
+                            <a href="https://www.youtube.com/@syazwaniiliabuhassan" class="youtube"
+                                data-toggle="tooltip" data-placement="top" title="YouTube"><i
+                                    class="fa fa-youtube-play"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+    <!-- ***** Footer Area End ***** -->
+
+    <!-- ******* All JS ******* -->
+    <!-- jQuery js -->
+    <script src="js/jquery.min.js"></script>
+    <!-- Popper js -->
+    <script src="js/popper.min.js"></script>
+    <!-- Bootstrap js -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- All js -->
+    <script src="js/mona.bundle.js"></script>
+    <!-- Active js -->
+    <script src="js/default-assets/active.js"></script>
+</body>
+
+</html>
