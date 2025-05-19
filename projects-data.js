@@ -27,7 +27,7 @@ const projects = [
         id: "vanstapele",
         title: "[Website] Van Stapele Dessert Ordering System",
         date: "20 Dec 2024",
-        images: ["./img/bg-img/vs1.png", "./img/bg-img/vs2.png", "./img/bg-img/vs3.png", "./img/bg-img/vs4.png", "./img/bg-img/vs5.png"],
+        images: ["./img/bg-img/vs1.png", "./img/bg-img/vs2.png", "./img/bg-img/vs4.png", "./img/bg-img/vs5.png",  "./img/bg-img/vs6.png", "./img/bg-img/vs3.png",  "./img/bg-img/vs7.png",  "./img/bg-img/vs77.png",  "./img/bg-img/vs8.png",  "./img/bg-img/vs9.png",  "./img/bg-img/vs10.png",],
         description: "Van Stapele is a user-friendly dessert ordering system designed to let customers browse and order a variety of cakes, including ice cream cakes, deluxe cakes, ready-to-eat cakes, and soft cookies. Built using HTML, CSS, and Java, the platform features a seamless shopping experience with cart functionality and payment processing. On the admin side, a comprehensive dashboard enables order tracking, product management, and PDF report generation for efficient business operations. This project demonstrates full-stack development skills focused on e-commerce and administrative management.",
         tags: ["HTML/CSS", "JAVA", "Full-stack", "E-commerce website"]
     },
