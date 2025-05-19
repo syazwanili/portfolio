@@ -98,8 +98,8 @@ const projects = [
     {
         id: "network",
         title: "[Network] Office Network Design Using Cisco Packet Tracer",
-        date: "24 Jan 2025",
-        images: ["./img/bg-img/pp1.jpeg", "./img/bg-img/pp2.jpeg", "./img/bg-img/pp3.jpeg", "./img/bg-img/pp4.jpeg", "./img/bg-img/pp5.jpeg"],
+        date: "13 Jul 2022",
+        images: ["./img/bg-img/network.png"],
         description: `This project focuses on designing and simulating a small-scale office network for the fictional company <strong>JBiebs Prod Co.</strong> using <strong>Cisco Packet Tracer</strong>. I designed the network to support two departments—<strong>Admin</strong> and <strong>Advertisement</strong>—with a total of <strong>36 client devices</strong>, incorporating both wired and wireless connectivity.<br><br>
 
 The scope of the project includes:
