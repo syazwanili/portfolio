@@ -100,18 +100,11 @@ const projects = [
         title: "[Network] Office Network Design Using Cisco Packet Tracer",
         date: "13 Jul 2022",
         images: ["./img/bg-img/network.png"],
-        description: `This project focuses on designing and simulating a small-scale office network for the fictional company <strong>JBiebs Prod Co.</strong> using <strong>Cisco Packet Tracer</strong>. I designed the network to support two departments—<strong>Admin</strong> and <strong>Advertisement</strong>—with a total of <strong>36 client devices</strong>, incorporating both wired and wireless connectivity.<br><br>
+        description: `This project focuses on designing and simulating a small-scale office network for the fictional company JBiebs Prod Co. using Cisco Packet Tracer. I designed the network to support two departments—Admin and Advertisement—with a total of 36 client devices, incorporating both wired and wireless connectivity.<br><br>
 
-The scope of the project includes:
-<ul>
-  <li>IP addressing and subnetting</li>
-  <li>Router and switch configuration</li>
-  <li>Network connectivity testing using command prompt tools</li>
-  <li>File sharing between devices</li>
-  <li>Setting up a web server with DNS and DHCP services</li>
-</ul>
+The scope of the project includes IP addressing and subnetting, Router and switch configuration, Network connectivity testing using command prompt tools, File sharing between devices, and Setting up a web server with DNS and DHCP services.<br>
 
-Through this assignment, I gained hands-on experience in network design, configuration, and troubleshooting. It allowed me to apply the theoretical concepts from the <strong>ITT400</strong> course, strengthening my understanding of data communication and networking principles in a practical setting.<br><br>
+Through this assignment, I gained hands-on experience in network design, configuration, and troubleshooting. It allowed me to apply the theoretical concepts from the course, strengthening my understanding of data communication and networking principles in a practical setting.<br><br>
 <br><br>Click <a href="https://drive.google.com/file/d/1yv3R7VuOwGj4yk7jKAM4zzKclxsojOv9/view?usp=sharing" target="_blank" style="color:#ff4081;text-decoration:underline;">HERE</a> to view the presentation video.`,
         tags: ["Networking Basics", "Web Server Setup ", "DHCP" ,"DNS", "Cisco Packet Tracer"]
     },
