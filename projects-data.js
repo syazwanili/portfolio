@@ -29,7 +29,7 @@ const projects = [
         date: "20 Dec 2024",
         images: ["./img/bg-img/vs1.png", "./img/bg-img/vs2.png", "./img/bg-img/vs4.png", "./img/bg-img/vs5.png",  "./img/bg-img/vs6.png", "./img/bg-img/vs3.png",  "./img/bg-img/vs7.png",  "./img/bg-img/vs77.png",  "./img/bg-img/vs8.png",  "./img/bg-img/vs9.png",  "./img/bg-img/vs10.png",],
         description: "Van Stapele is a user-friendly dessert ordering system designed to let customers browse and order a variety of cakes, including ice cream cakes, deluxe cakes, ready-to-eat cakes, and soft cookies. Built using HTML, CSS, and Java, the platform features a seamless shopping experience with cart functionality and payment processing. On the admin side, a comprehensive dashboard enables order tracking, product management, and PDF report generation for efficient business operations. This project demonstrates full-stack development skills focused on e-commerce and administrative management.",
-        tags: ["HTML/CSS", "JAVA", "Full-stack", "E-commerce website"]
+        tags: ["HTML/CSS", "JAVA", "Full-stack", "Dashboard", "E-commerce website"]
     },
     {
         id: "wheelswave-app",
@@ -94,6 +94,26 @@ const projects = [
         images: ["./img/bg-img/pp1.jpeg", "./img/bg-img/pp2.jpeg", "./img/bg-img/pp3.jpeg", "./img/bg-img/pp4.jpeg", "./img/bg-img/pp5.jpeg"],
         description: `Planet Pals: Earth Rescue is an educational platformer that puts players in the shoes of a young eco-hero on a mission to save the planet. Across three levels of increasing difficulty, players will extinguish wildfires, plant trees, and rescue endangered animals—learning valuable lessons about environmental conservation along the way. Designed to be both fun and informative, the game encourages eco-awareness through interactive gameplay. Built using Construct 3, it blends meaningful action with engaging platformer mechanics.<br><br>Play the game <a href="https://www.construct.net/en/free-online-games/planet-pals-earth-rescue-72944/play" target="_blank" style="color:#ff4081;text-decoration:underline;">HERE</a>.`,
         tags: ["Educational Game", "Environmental Awareness", "Construct 3"]
+    },
+    {
+        id: "network",
+        title: "[Network] Office Network Design Using Cisco Packet Tracer",
+        date: "24 Jan 2025",
+        images: ["./img/bg-img/pp1.jpeg", "./img/bg-img/pp2.jpeg", "./img/bg-img/pp3.jpeg", "./img/bg-img/pp4.jpeg", "./img/bg-img/pp5.jpeg"],
+        description: `This project focuses on designing and simulating a small-scale office network for the fictional company <strong>JBiebs Prod Co.</strong> using <strong>Cisco Packet Tracer</strong>. I designed the network to support two departments—<strong>Admin</strong> and <strong>Advertisement</strong>—with a total of <strong>36 client devices</strong>, incorporating both wired and wireless connectivity.<br><br>
+
+The scope of the project includes:
+<ul>
+  <li>IP addressing and subnetting</li>
+  <li>Router and switch configuration</li>
+  <li>Network connectivity testing using command prompt tools</li>
+  <li>File sharing between devices</li>
+  <li>Setting up a web server with DNS and DHCP services</li>
+</ul>
+
+Through this assignment, I gained hands-on experience in network design, configuration, and troubleshooting. It allowed me to apply the theoretical concepts from the <strong>ITT400</strong> course, strengthening my understanding of data communication and networking principles in a practical setting.<br><br>
+<br><br>Click <a href="https://drive.google.com/file/d/1yv3R7VuOwGj4yk7jKAM4zzKclxsojOv9/view?usp=sharing" target="_blank" style="color:#ff4081;text-decoration:underline;">HERE</a> to view the presentation video.`,
+        tags: ["Networking Basics", "Web Server Setup ", "DHCP" ,"DNS", "Cisco Packet Tracer"]
     },
     {
         id: "sif",
